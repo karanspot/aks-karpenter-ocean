@@ -26,7 +26,7 @@ az provider register --namespace Microsoft.ContainerService
 ```
 Make sure Autoscale is disabled in your Node pools.
 
-Enable NodeAutoProvisioning on an existing cluster:
+Enable NodeAutoProvisioning on an existing cluster (TF Module will run this cmd as local-exec after AKS cluster is created):
 ```
 az aks update --name $CLUSTER_NAME --resource-group $RESOURCE_GROUP_NAME --node-provisioning-mode Auto --network-plugin azure --network-plugin-mode overlay --network-dataplane cilium
 ```
@@ -38,7 +38,6 @@ In the JSON after running the Update command you should see NAP set to Auto mode
   },
 ```
 
-## Providers
 
 
 
