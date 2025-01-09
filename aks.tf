@@ -35,7 +35,7 @@ module "aks" {
   ebpf_data_plane = "cilium"
   network_plugin_mode = "overlay"
   enable_auto_scaling    = false
-  #enable_node_public_ip = false
+  enable_node_public_ip = false
   rbac_aad = false
 
   agents_labels = {
