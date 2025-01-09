@@ -84,7 +84,7 @@ variable "node_pools" {
           priority = "Spot"
           tags = {
             "Nodes" : "worker",
-            "Creator" : "karan@netapp.com"
+            "Creator" : "user@netapp.com"
           }
           node_labels = {
             "Nodes" : "worker"
