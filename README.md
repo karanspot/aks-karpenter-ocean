@@ -1,3 +1,4 @@
+Deploys performance comparison between AKS Karpenter and Spot Ocean using Terraform Modules. 
 ## Prerequisites
 Below are prerequisites to provision AKS with NodeAutoProvisioning enabled(Karpenter):
 
